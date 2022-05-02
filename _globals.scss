@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin flexcenter($direction){
+    display: flex;
+    flex-direction:$direction;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+body{
+    @include flexcenter(column);
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background: $Very_dark_blue_mainBG;
+}
+p{
+    color: $Soft_blue;
+    font-size: $text-primary;
+    font-weight: $thin;
+    line-height: 1.6rem;
+}
+.container{
+    position: relative;
+    @include flexcenter(column);
+    background: $Very_dark_blue_cardBG;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    width: 20rem;
+    .layer{
+        position: absolute;
+        border-radius: 0.5rem;
+        width: 17.3rem;
+        height: 17.3rem;
+        right: 1.375em;
+
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            
+        }
+        &:focus{
+            background: hslA(178, 100%, 50%,40%);
+            svg{
+                opacity: 1;
+            }
+        }
+    }
+    
+    .img{
+        img{
+            height: 17.3rem;
+            border-radius: 0.5rem;
+        }
+
+
+        }
+    .part-up-Line{
+        h3{
+            color: $White;
+            font-size: 1.3rem;
+            font-weight: $bold;
+            padding:1.6rem 0 0.8rem;
+            cursor: pointer;
+            &:hover{
+                color: $Cyan;
+            }
+        }
+
+        .flexed-part{
+            padding: 0.9rem 0 0.8rem;
+            border-bottom: 1px solid $Very_dark_blue_line;
+            @include flexcenter(row);
+            justify-content: space-between;
+
+            .right,.left{
+                @include flexcenter(row);
+            }
+            h4{
+                color: $Cyan;
+                font-weight: $regular;
+            }
+            h4,p{
+                margin-left: 0.4rem
+            }
+        }
+        
+        
+    }
+    .part-down-Line{
+        @include flexcenter(row);
+        justify-content: flex-start;
+        width: 100%;
+        margin: 1rem 0 0;
+        
+        img{
+            height: 2rem;
+            border: 1px solid $White;
+            border-radius: 50%;
+        }
+        p{
+            padding-left: 0.8rem;
+        }
+        span{
+            color: $White;
+            padding-left: 0.2rem;
+            font-weight: $thin;
+            cursor: pointer;
+            &:hover{
+                color: $Cyan;
+            }
+        }
+
+    }
+}

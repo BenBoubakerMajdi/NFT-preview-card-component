@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  background: #0d192b;
+}
+
+p {
+  color: #8bacda;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #14253d;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  width: 20rem;
+}
+
+.container .layer {
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 17.3rem;
+  height: 17.3rem;
+  right: 1.375em;
+}
+
+.container .layer svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.container .layer:focus {
+  background: hslA(178, 100%, 50%, 40%);
+}
+
+.container .layer:focus svg {
+  opacity: 1;
+}
+
+.container .img img {
+  height: 17.3rem;
+  border-radius: 0.5rem;
+}
+
+.container .part-up-Line h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.6rem 0 0.8rem;
+  cursor: pointer;
+}
+
+.container .part-up-Line h3:hover {
+  color: #00fff7;
+}
+
+.container .part-up-Line .flexed-part {
+  padding: 0.9rem 0 0.8rem;
+  border-bottom: 1px solid #2f415b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .part-up-Line .flexed-part .right, .container .part-up-Line .flexed-part .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .part-up-Line .flexed-part h4 {
+  color: #00fff7;
+  font-weight: 400;
+}
+
+.container .part-up-Line .flexed-part h4, .container .part-up-Line .flexed-part p {
+  margin-left: 0.4rem;
+}
+
+.container .part-down-Line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 1rem 0 0;
+}
+
+.container .part-down-Line img {
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.container .part-down-Line p {
+  padding-left: 0.8rem;
+}
+
+.container .part-down-Line span {
+  color: white;
+  padding-left: 0.2rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.container .part-down-Line span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=Style.css.map */
